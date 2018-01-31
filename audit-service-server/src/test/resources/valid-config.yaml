@@ -1,0 +1,14 @@
+messageBroker :
+  host: "localhost"
+  port: 5672
+  username: "xxxxx"
+  password: "xxxxx"
+  exchangeName: "OEPPAuditExchange"
+  queueName: "oepp.audit.queue"
+  retryQueueName: "oepp.audit.queue.retry"
+  errorQueueName: "oepp.audit.queue.error"
+  requeueErrors: false
+  maxRetries: 5
+
+auditEndpoint :
+  url : "http://test.test.com"

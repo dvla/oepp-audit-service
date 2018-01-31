@@ -1,0 +1,18 @@
+messageBroker :
+  host: "localhost"
+  port: 5672
+  username: "xxxx"
+  password: "xxxxx"
+  exchangeName: "OEPPAuditExchange"
+  queueName: "oepp.audit.queue"
+  retryQueueName: "oepp.audit.queue.retry"
+  errorQueueName: "oepp.audit.queue.error"
+  requeueErrors: false
+  maxRetries: 5
+
+auditEndpoint :
+  url : "http://localhost:99999/dsd/audit"
+
+httpClient:
+  connectTimeoutInMilliseconds: 2000
+  readTimeoutInMilliseconds: 10000

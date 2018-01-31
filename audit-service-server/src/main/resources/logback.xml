@@ -1,0 +1,15 @@
+<configuration debug="true">
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%-5level [%date] audit-service-server %thread %logger: %message%n%xException</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="uk.gov.dvla" level="DEBUG" />
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+</configuration>
